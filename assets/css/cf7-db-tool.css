@@ -1,0 +1,221 @@
+.cf7-dbt-container{
+	width: 100%;
+}
+.cf7-dbt-container *{
+	box-sizing: border-box;
+}
+.cf7-dbt-container:before,.cf7-dbt-container:after{
+	content: '';
+	display: table;
+}
+.cf7-dbt-container:after{
+	clear: both;
+}
+.cf7-dbt-content{
+	width: 80%;
+	float: left;
+	box-sizing: border-box;
+}
+.cf7-dbt-sidebar{
+	float: left;
+	width: 20%;
+	padding-left: 15px;
+	padding-top: 40px;
+	box-sizing: border-box;
+}
+.cf7-dbt-sidebar .cf7-dbt-sidebar-inner{
+	background-color: #fff;
+	padding: 15px;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+
+}
+.cf7-dbt-container.report .cf7-dbt-sidebar-inner{
+	margin-top: 40px
+}
+
+.cft-dbt-wrapper table th{
+	font-weight: 600;
+}
+.cf7-dbt-entry-details{
+	background-color: white;
+	padding: 20px;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+.cf7-dbt-entry-details .cf7-dbt-entry-header h3{
+	margin: 0;
+	display: inline-block;
+	padding-right: 10px;
+}
+.cf7-dbt-entry-details .cf7-dbt-entry-header a{
+	float: right;
+}
+.cf7-dbt-search{
+	position: relative;
+	margin-bottom: 8px;
+}
+.cf7-dbt-search .search-box{
+	padding-bottom: 10px;
+}
+.cf7-dbt-search-active{
+	padding-right: 60px;
+}
+.cf7-dbt-search-reset{
+	position: absolute;
+	right: 0;
+}
+.cft-dbt-wrapper table a:focus{
+	outline: none;
+	box-shadow: none;
+}
+.cf7-dbt-success{
+	color: #155724;
+}
+.cf7-dbt-failed{
+	color: #721c24;
+}
+.cf7-dbt-warning{
+	background: #fff;
+	padding: 10px 20px;
+	border: 2px solid #faba00;
+	box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.1 );
+}
+.cf7-dbt-reply-form-container{
+	padding: 20px 0;
+	display: none;
+	border-top: 1px dashed #e7e7e7;
+	position: relative;
+}
+.cf7-dbt-reply-form-container .cf7-dbt-form-field{
+	padding-bottom: 20px;
+}
+.cf7-dbt-reply-form-container .cf7-dbt-form-field label{
+	display: block;
+	font-weight: 600;
+	padding-bottom: 6px;
+}
+.cf7-dbt-reply-form-container .cf7-dbt-form-field input,.cf7-dbt-reply-form-container .cf7-dbt-form-field textarea{
+	display: block;
+	width: 100%;
+	border-radius: 3px;
+	padding: 5px 10px;
+}
+.cf7-dbt-reply-form-container .cf7-dbt-form-footer input{
+	font-weight: 700;
+	font-size: 11px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	border: none;
+	padding: 8px 24px;
+	display: inline-block;
+	margin-right: 10px;
+	cursor: pointer;
+	border-radius: 3px;
+	color: #fff;
+}
+.cf7-dbt-reply-form-container .cf7-dbt-form-footer input:focus{
+	outline: none;
+}
+.cf7-dbt-reply-form-container .cf7-dbt-form-footer input[type="submit"]{
+	background-color: #0069d9;
+	border-bottom: 3px solid #004188;
+}
+.cf7-dbt-reply-form-container .cf7-dbt-form-footer input[type="submit"]:hover{
+	background-color: #005cbf;
+}
+.cf7-dbt-reply-form-container .cf7-dbt-form-footer input[type="button"]{
+	background-color: #dc3545;
+	border-bottom: 3px solid #ab1f2c;
+}
+.cf7-dbt-reply-form-container .cf7-dbt-form-footer input[type="button"]:hover{
+	background-color: #c82333;
+}
+.cf7-dbt-loader{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(255,255,255,0.75);
+	display: none;
+}
+.cf7-dbt-loader-inner{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.cf7-dbt-loader .cf7-dbt-loading-icon{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 3px solid #5d5d5d;
+	border-top-color: #ef4743;
+	-webkit-animation: cf7-dbt-spin 1s linear infinite;
+	animation: cf7-dbt-spin 1s linear infinite;
+	border-radius: 50%;
+}
+.cf7-dbt-loader .cf7-dbt-loading-text{
+	font-weight: 600;
+	padding: 10px 0 0;
+	margin: 0;
+	display: block;
+}
+.cf7-dbt-form-error{
+	display: none;
+	margin: 0;
+}
+.cf7-dbt-form-field.has-error textarea{
+	border-color: #dc3545;
+}
+.has-error .cf7-dbt-form-error{
+	display: block;
+	padding-top: 5px;
+	font-size: 12px;
+	font-style: italic;
+	color: #721c24
+}
+.cf7-dbt-reply-status{
+	padding: 10px 20px;
+	background: #f9f9f9;
+	border-left: 4px solid #ddd;
+	margin-bottom: 20px;
+	display: none;
+}
+.cf7-dbt-reply-status p{
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+.cf7-dbt-reply-status.success{
+	border-color:#46b450;
+}
+.cf7-dbt-reply-status.failed{
+	border-color: #dc3232;
+}
+.cf7-dbt-reply-status.success p.success{
+	display: block;
+}
+.cf7-dbt-reply-status.failed p.failed{
+	display: block;
+}
+@-webkit-keyframes cf7-dbt-spin {
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+@keyframes cf7-dbt-spin {
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
